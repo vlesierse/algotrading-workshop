@@ -80,10 +80,18 @@ _If you have a running Jupyter Notebook environment, feel free to use that. Make
 1. Set 'Notebook instance name' to **algotrading**.
 1. In the “Permissions and Encryption” section, choose “Enter a custom IAM role ARN” and use the TeamRole ARN you have noted down earlier (e.g. **arn:aws:iam::{YourAccountID}:role/TeamRole**)
 1. Under Git Repositories, select the default repository from the dropdown list: **algotrading-workshop**.
-1. Click **Create notebook instance**.
+1. Click **Create notebook instance**. This will take a few minutes. Wait until your Notebook instance has the Status "InService".
 
   **Create Notebook instance**
   ![repo](assets/notebook-create.png)
+
+  **Notebook InService**
+  ![repo](assets/notebooks.png)
+
+1. Click on the first link **Open Jupyter**. This will open the Jupyter notebook for this instance. Verify that you see the following folders that have been cloned from the git repository. You will run different Jupyter notebooks from these folders in the next steps.
+
+  **Jupyter Folders**
+  ![repo](assets/jupyter.png)
 
 ## Step 2: Backtest a trend following strategy
 
