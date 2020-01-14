@@ -107,33 +107,33 @@ You can choose between the following trading strategies:
 Select the Jupyter Notebook for backtesting the strategy in the folder **2_Strategies** for your selected strategy and run it from your Amazon SageMaker Notebook instance. In the instructions, there is guidance on how to optimize the strategy.
 
 
-
 ## Step 3: Backtest a machine-learning based strategy
 
 **Time to complete:** 20 minutes.
 
 In this module, we backtest a machine-learning strategy with Amazon SageMaker.
 
-You can choose the following trading strategy:
-1. **ML Long/Short Prediction**
+Usually you will have two parts, one for training the machine learning model, and one for backtesting the strategy. You can run both notebooks or skip the training of the model as there is already a trained model available in the repository:
+
+**ML Long/Short Prediction Strategy**
 * Model Training: **3_Models/Train_Model_Forecast.ipynb**
 * Strategy Backtesting: **2_Strategies/Strategy_Forecast.ipynb**
 
-### Step 3.1 Train machine-learning model
+### Step 3.1 Train machine-learning model (optional)
 
-Select the Jupyter Notebook for training the model in the folder **3_Models** for your selected strategy and run it from your Amazon SageMaker Notebook instance. In the instructions, there is guidance on how to optimize the model.
+Select the Jupyter Notebook for training the model in the folder **3_Models** and run it from your Amazon SageMaker Notebook instance. In the instructions, there is guidance on how to optimize the model.
 
 ### Step 3.2 Backtest machine-learning based strategy
 
-Select the Jupyter Notebook for backtesting the strategy in the folder **2_Strategies** for your selected strategy and run it from your Amazon SageMaker Notebook instance. In the instructions, there is guidance on how to optimize the strategy.
+Select the Jupyter Notebook for backtesting the strategy in the folder **2_Strategies** and run it from your Amazon SageMaker Notebook instance. In the instructions, there is guidance on how to optimize the strategy.
 
 ## Step 4: Run and host trading strategies
 
 ![architecture](assets/arch-host.png)
 
-Available Soon.
+This is not part of the workshop but you can check out the following Notebook how this can be done with Amazon SageMaker: **2_Strategies / Host_Strategy_Live_Simulation.ipynb**
 
-### Congratulations! You have completed the workshop. Don't forget to cleanup the resources if you use your own account.
+### Congratulations! You have completed the workshop. Don't forget to cleanup the resources if you use your own account in this workshop.
 
 ## Step 5: Cleanup (Optional)
 
