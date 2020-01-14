@@ -61,9 +61,9 @@ _If you have a running Jupyter Notebook environment, feel free to use that. Make
 
 ### Step 1.1: Create Git Repository for Notebook Instance
 
-1. Navigate to Amazon SageMaker [in the console](https://console.aws.amazon.com/sagemaker) and Select Notebook / Git Repository and Click **Add repository**.
+1. Navigate to Amazon SageMaker [in the console](https://console.aws.amazon.com/sagemaker) and Select Notebook / Notebook / Git Repositories and Click **Add repository**.
 1. Select GitHub/Other Git-based repo and create a new repository.
-1. Set 'Amazon SageMaker repository name' to **algotrading-workshop**, Set 'Git Repository URL' to https://github.com/osteffmann/algotrading-workshop.
+1. Set 'Amazon SageMaker repository name' to **algotrading-workshop**, Set 'Git Repository URL' to https://github.com/osteffmann/algotrading-workshop
 1. Select to use No Secret.
 1. Click **Add repository**.
 
@@ -71,20 +71,22 @@ _If you have a running Jupyter Notebook environment, feel free to use that. Make
 
 ### Step 1.2: Create Notebook Instance
 
-1. Navigate to Amazon SageMaker [in the console](https://console.aws.amazon.com/sagemaker) and Select Notebook / Notebooks and Click **Create notebook instance**.
+1. Navigate to IAM [in the console](https://console.aws.amazon.com/iam) and Select Access Management / Roles. Search for **TeamRole** and click on it to get the Role ARN from the role screen. Please note down this ARN for the next step.
+
+  **Lookup ARN for TeamRole**
+  ![repo](assets/iam-role.png)
+
+1. Navigate to Amazon SageMaker [in the console](https://console.aws.amazon.com/sagemaker) and Select Notebook / Notebook instances and Click **Create notebook instance**.
 1. Set 'Notebook instance name' to **algotrading**.
-1. In the “Permissions and Encryption” section, choose “Enter a custom IAM role ARN” and use the TeamRole ARN provisioned in your account (e.g. **arn:aws:iam::{YourAccountID}:role/TeamRole**) (**Note**: To get role ARN, navigate to IAM / Roles, search for TeamRole, and get the Role ARN from the role screen)
+1. In the “Permissions and Encryption” section, choose “Enter a custom IAM role ARN” and use the TeamRole ARN you have noted down earlier (e.g. **arn:aws:iam::{YourAccountID}:role/TeamRole**)
 1. Under Git Repositories, select the default repository from the dropdown list: **algotrading-workshop**.
 1. Click **Create notebook instance**.
 
-  Lookup Role ARN
-  ![repo](assets/iam-role.png)
-
-  Create Notebook instance
+  **Create Notebook instance**
   ![repo](assets/notebook-create.png)
 
 ## Step 2: Backtest a trend following strategy
- 
+
 **Time to complete:** 15 minutes.
 
 In this module, we backtest a trend following strategy with Amazon SageMaker.
